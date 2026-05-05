@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+
+    width: 90%;
+    max-width: 400px;
+
+    color: white;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    animation: fadeIn 1s ease;
+}
+
+/* Animācija */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* IMAGE */
+img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* TIPS */
+.tips {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tip {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.tip:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+
+    background: white;
+    color: #3b82f6;
+
+    text-decoration: none;
+    border-radius: 10px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e0e7ff;
+    transform: scale(1.05);
+}
